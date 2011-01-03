@@ -1,8 +1,10 @@
 <?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
 
 /**
- * TYPOlight Open Source CMS
+ * Contao Open Source CMS
  * Copyright (C) 2005-2010 Leo Feyer
+ *
+ * Formerly known as TYPOlight Open Source CMS.
  *
  * This program is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +22,7 @@
  *
  * PHP version 5
  * @copyright  Andreas Schempp 2009-2010
- * @author     Andreas Schempp <andreas@schempp.ch
+ * @author     Andreas Schempp <andreas@schempp.ch>
  * @license    http://opensource.org/licenses/lgpl-3.0.html
  * @version    $Id$
  */
@@ -31,8 +33,8 @@
  */
 if (TL_MODE == 'BE')
 {
-	$GLOBALS['TL_LANG']['ERR']['invalidLogin']		= 'Anmeldung fehlgeschlagen! <a href="typolight/pwrecovery.php?username=' . $this->Input->post('username') . '">Passwort vergessen?</a>';
-	$GLOBALS['TL_LANG']['ERR']['accountLocked']		= 'Das Konto wurde gesperrt! Sie können sich in %d Minuten erneut anmelden. <a href="typolight/pwrecovery.php?username=' . $this->Input->post('username') . '">Passwort vergessen?</a>';
+	$GLOBALS['TL_LANG']['ERR']['invalidLogin']		= 'Anmeldung fehlgeschlagen! <a href="contao/pwrecovery.php?username=' . $this->Input->post('username') . '">Passwort vergessen?</a>';
+	$GLOBALS['TL_LANG']['ERR']['accountLocked']		= 'Das Konto wurde gesperrt! Sie können sich in %d Minuten erneut anmelden. <a href="contao/pwrecovery.php?username=' . $this->Input->post('username') . '">Passwort vergessen?</a>';
 }
 $GLOBALS['TL_LANG']['ERR']['pwrecoveryFailed']	= 'Kein Benutzer mit diesem Namen und E-Mail-Adresse gefunden.';
 
@@ -45,5 +47,5 @@ $GLOBALS['TL_LANG']['MSC']['recoverBT']			= 'Neues Passwort senden';
 $GLOBALS['TL_LANG']['MSC']['pwrecoverySuccess']	= 'Es wurde Ihnen ein neues Passwort per E-Mail zugesendet. Bitte melden Sie sich mit dem neuen Passwort an.';
 $GLOBALS['TL_LANG']['MSC']['pwrecoverySubject']	= 'Neues Passwort für %s';
 $GLOBALS['TL_LANG']['MSC']['pwrecoveryMessage']	= "Auf %s wurde Ihr Passwort für den Benutzer %s zurückgesetzt.\n\nDas neue Passwort lautet: %s";
-$GLOBALS['TL_LANG']['MSC']['beLogin']			= 'TYPOlight Backend-Login';
+$GLOBALS['TL_LANG']['MSC']['beLogin']			= 'Contao Backend-Login';
 
