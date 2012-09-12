@@ -46,7 +46,7 @@ class BackendPassword extends Backend
 			$this->Template = new BackendTemplate('be_pwrecovery');
 
 			$this->Template->theme = $this->getTheme();
-			$this->Template->messages = $this->getMessages();
+			$this->Template->messages = $this->getPasswordMessages();
 			$this->Template->base = $this->Environment->base;
 			$this->Template->language = $GLOBALS['TL_LANGUAGE'];
 			$this->Template->title = $GLOBALS['TL_CONFIG']['websiteTitle'];
@@ -183,7 +183,7 @@ class BackendPassword extends Backend
 		$this->Template = new BackendTemplate('be_password');
 
 		$this->Template->theme = $this->getTheme();
-		$this->Template->messages = $this->getMessages();
+		$this->Template->messages = $this->getPasswordMessages();
 		$this->Template->base = $this->Environment->base;
 		$this->Template->language = $GLOBALS['TL_LANGUAGE'];
 		$this->Template->title = $GLOBALS['TL_CONFIG']['websiteTitle'];
@@ -205,7 +205,7 @@ class BackendPassword extends Backend
 	 * @param boolean
 	 * @return string
 	 */
-	protected function getMessages($blnNoWrapper=false)
+	protected function getPasswordMessages()
 	{
 		$strMessages = '';
 
