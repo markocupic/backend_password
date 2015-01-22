@@ -10,9 +10,6 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-
-/**
- * Hooks
- */
-$GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('BackendPassword\\BackendPassword', 'handleLoginScreen');
-
+$GLOBALS['TL_DCA']['tl_user']['fields']['activation'] = array(
+       'sql' => "varchar(32) NOT NULL default ''"
+);
