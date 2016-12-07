@@ -14,5 +14,9 @@
 /**
  * Hooks
  */
-$GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('BackendPassword\\BackendPassword', 'handleLoginScreen');
+if(TL_MODE == 'BE')
+{
+    $GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('BackendPassword\\BackendPassword', 'handleLoginScreen');
+
+}
 
