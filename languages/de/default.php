@@ -16,7 +16,7 @@
  */
  
 $GLOBALS['TL_LANG']['ERR']['pwrecoveryFailed'] = "Kein Benutzer mit diesem Benutzernamen oder dieser E-Mail-Adresse gefunden.";
-$GLOBALS['TL_LANG']['ERR']['invalidLogin'] = "Anmeldung fehlgeschlagen! <a href=\"contao/index.php?pwrecovery=1\">Passwort vergessen?</a>";
+$GLOBALS['TL_LANG']['ERR']['invalidBackendLogin'] = "Anmeldung fehlgeschlagen! <a href=\"contao/index.php?pwrecovery=1\">Passwort vergessen?</a>";
 $GLOBALS['TL_LANG']['ERR']['accountLocked'] = "Das Konto wurde gesperrt! Sie können sich in %d Minuten erneut anmelden. <a href=\"contao/index.php?pwrecovery=1\">Passwort vergessen?</a>";
 $GLOBALS['TL_LANG']['MSC']['emailOrUsername'] = "Bitte geben Sie Ihre E-Mail-Adresse oder Ihren Benutzernamen ein.";
 $GLOBALS['TL_LANG']['MSC']['newPassword'] = "Bitte geben Sie Ihr neues Passwort ein.";

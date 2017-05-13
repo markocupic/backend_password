@@ -17,6 +17,6 @@
 if(TL_MODE == 'BE')
 {
     $GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('BackendPassword\\BackendPassword', 'handleLoginScreen');
-
+    $GLOBALS['TL_HOOKS']['checkCredentials'][]  = array('BackendPassword\\BackendPassword', 'setLanguage');
 }
 
